@@ -1,0 +1,103 @@
+.charsheet 
+{ 
+    
+    color: #000000;
+    background: #ffffff;
+    width: 850px;
+    font-size: 15px;
+    box-sizing: border-box;}
+
+.charsheet *, .charsheet *:before, .charsheet *:after {
+    box-sizing: inherit; font-family: 'Courier New';
+}
+
+/* Redéfinie des trucs à zéro, retirer les puces des listes et la décoraction des liens */
+.charsheet h1, .charsheet h2, .charsheet h3, .charsheet h4, .charsheeth5, 
+.charsheet h6, .charsheet a, .charsheet p, .charsheet span, .charsheet div,
+.charsheet figure, .charsheet img, .charsheet ul, .charsheet li, .charsheet select, .charsheet option 
+.charsheet body, .charsheet fieldset, .charsheet input, .charsheet label, .charsheet textarea 
+{
+	margin: 0; padding: 0; border: 0;
+	list-style: none;
+	box-shadow: 0 0 0 #000000; border-radius: 0;
+}
+
+button, p,      { display: inline-block;}
+textarea, input { background: transparent; font-family: 'Times New Roman'; font-style: italic;}
+textarea        { }
+
+.sheet-information li{
+    padding: 10px 0;
+    border-bottom: 1px solid #000000;
+}
+
+.sheet-attribut1 li{
+    display: inline-block;
+    text-align: center;
+    width: 140px;
+    margin: 0 5px;
+}
+
+.sheet-attribut1 li input + p{
+    font-size: 10px;
+}
+
+.sheet-attribut1 li button + p{
+    font-size: 15px;
+}
+
+.sheet-attribut2 li{
+    display: inline-block;
+    text-align: center;
+    width: 140px;
+    margin: 0 5px;
+}
+
+.sheet-attribut2 input{
+    border: 2px solid #000000;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Courier New";
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.sheet-attribut3 p{
+    width: 100px;
+    padding: 2px;
+    border: 1px solid #000000;
+    margin-right: 0px;
+    margin-bottom: 1px;
+    background: #000000;
+    color: #ffffff;
+}
+
+.sheet-attribut3 input{
+    border: 1px solid #000000;
+    padding: 2px;
+    vertical-align: top;
+}
+
+.sheet-repeat_moove{ 
+    display: inline-block;
+    width: 300px;
+}
+
+
+.sheet-repeat_moove input[name="attr_moove_check"] ~ span { display: block; white-space: pre-wrap;}
+.sheet-repeat_moove input[name="attr_moove_check"] ~ textarea { display: none;}
+.sheet-repeat_moove input[name="attr_moove_check"]:checked ~ span { display: none;}
+.sheet-repeat_moove input[name="attr_moove_check"]:checked ~ textarea { display: block;}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
