@@ -1,0 +1,113 @@
+<p class="sheet-title1">State Departement of Correction</p><br>
+<p class="sheet-title2">FORM 221-C</p><br>
+<p class="sheet-title2">TYPE OR PRINT WITH BALL POINT PEN ONLY</p><br><br>
+
+<ul class="sheet-attribut1">
+    <li>
+        <button type="roll" value="/r ?{Type : | Normal, 2d6| Avantage, 3d6kh2sd| Désavantage, 3d6kl2s}+@{might}+@{broke_down}"></button>
+        <p>Might</p><br>
+        <input type="checkbox" name="attr_broke_down"> <p>Broke down</p>
+    </li>
+    <li>
+        <button type="roll" value="/r ?{Type : | Normal, 2d6| Avantage, 3d6kh2sd| Désavantage, 3d6kl2s}+@{hustle}+@{gimp_up}"></button>
+        <p>Hustle</p><br>
+        <input type="checkbox" name="attr_gimp_up"> <p>Gimp up</p>
+    </li>
+    <li>
+        <button type="roll" value="/r ?{Type : | Normal, 2d6| Avantage, 3d6kh2sd| Désavantage, 3d6kl2s}+@{smooth}+@{hard_to_look_at}"></button>
+        <p>Smooth</p><br>
+        <input type="checkbox" name="attr_hard_to_look_at"> <p>Hard to look at</p>
+    </li>
+    <li>
+        <button type="roll" value="/r ?{Type : | Normal, 2d6| Avantage, 3d6kh2sd| Désavantage, 3d6kl2s}+@{brains}+@{punch-drunk}"></button>
+        <p>Brains</p><br>
+        <input type="checkbox" name="attr_punch_drunk"> <p>Punch-drunk</p>
+    </li>
+    <li>
+        <button type="roll" value="/r ?{Type : | Normal, 2d6| Avantage, 3d6kh2sd| Désavantage, 3d6kl2s}+@{soul}+@{whitebread}"></button>
+        <p>Soul</p><br>
+        <input type="checkbox" name="attr_whitebread"> <p>Whitebread</p>
+    </li>
+</ul>
+
+<ul class="sheet-attribut2">
+    <li><input type="number" name="attr_might"  min="-2" max="3" value="0"></li>
+    <li><input type="number" name="attr_hustle" min="-2" max="3" value="0"></li>
+    <li><input type="number" name="attr_smooth" min="-2" max="3" value="0"></li>
+    <li><input type="number" name="attr_brains" min="-2" max="3" value="0"></li>
+    <li><input type="number" name="attr_soul"   min="-2" max="3" value="0"></li>
+</ul>
+<br>
+
+<ul class="sheet-attribut3">
+    <li>
+        <p>CASH :</p><input type="text" name="attr_cash"><br>
+        <p>EXPERIENCE :</p><input type="text" name="attr_experience"><br>
+        <p>HEAT :</p><input type="text" name="attr_heat"><br>
+    </li>
+</ul>
+<br>
+
+<ul>
+    <fieldset class="repeating_moove">
+        <li class="sheet-repeat_moove">
+            <input type="checkbox" name="attr_moove_check">
+            <input type="text" name="attr_moove">
+            <textarea name="attr_moove_description"></textarea>
+            <span name="attr_moove_description"></span>
+            <br>
+        </li>
+    <fieldset>
+</ul>
+
+
+
+
+
+
+<br>
+<ul class="sheet-information">
+    <li>
+        <p>Official use only :</p>
+        <input type="radio" value="file" name="attr_official">      <p>File | </p>
+        <input type="radio" value="record" name="attr_official">    <p>Record | </p>
+        <input type="radio" value="archive" name="attr_official">   <p>Archive</p> 
+    </li>
+    
+    <li>
+        <p>Last Name :</p> <input type="text" name="attr_last_name"><br>
+        <p>First Name :</p> <input type="text" name="attr_first_name"><br>
+        <p>Middle Name :</p> <input type="text" name="attr_middle_name"><br>
+    </li>
+    
+    <li>
+        <p>Know Aliases :</p> <input type="text" name="attr_know_aliases"><br>
+    </li>
+    
+    <li>
+        <p>Date of birth :</p> <input type="text" name="attr_date_of_birth"><br>
+        <p>Place of birth :</p> <input type="text" name="attr_place_of_birth"><br>
+        <p>Marital status :</p> <input type="text" name="attr_marital_status"><br>
+        <p>Social security number :</p> <input type="text" name="attr_social_security_number"><br>
+    </li>
+    
+    <li>
+        <p>Gender :</p> <input type="text" name="attr_gender"><br>
+        <p>Height :</p> :</p> <input type="text" name="attr_height"><br>
+        <p>Weight :</p> <input type="text" name="attr_weight"><br>
+        <p>Eyes :</p> <input type="text" name="attr_eyes"><br>
+        <p>Hair :</p> <input type="text" name="attr_hair"><br>
+    </li>
+    
+    <li>
+        <p>Distinguishing characteristics :</p> <input type="text" name="attr_distinguishing_characteristics"><br>
+    </li>
+    
+    <li>
+        <p>Adress :</p> <input type="text" name="attr_adress"><br>
+        <p>City :</p> :</p> <input type="text" name="attr_city"><br>
+        <p>State :</p> <input type="text" name="attr_state"><br>
+        <p>Zip Code :</p> <input type="text" name="attr_zip_code"><br>
+        <p>Telephone :</p> <input type="text" name="attr_telephone"><br>
+    </li>
+</ul>
